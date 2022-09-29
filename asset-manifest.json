@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/perritos-adoption/static/css/main.dff3cc6c.css",
-    "main.js": "/perritos-adoption/static/js/main.ed64804f.js",
+    "main.js": "/perritos-adoption/static/js/main.a34f36fa.js",
     "static/media/adorable.jpg": "/perritos-adoption/static/media/adorable.31eda29eac2414a4cc2a.jpg",
     "static/media/adorable-mobile.jpg": "/perritos-adoption/static/media/adorable-mobile.7f1f7a8cf1ab9a17daa9.jpg",
     "static/media/id10.jpg": "/perritos-adoption/static/media/id10.de5cba54ea0a5f1face8.jpg",
@@ -26,10 +26,10 @@
     "static/media/id2.jpg": "/perritos-adoption/static/media/id2.6cc796a8fcb9f310430f.jpg",
     "index.html": "/perritos-adoption/index.html",
     "main.dff3cc6c.css.map": "/perritos-adoption/static/css/main.dff3cc6c.css.map",
-    "main.ed64804f.js.map": "/perritos-adoption/static/js/main.ed64804f.js.map"
+    "main.a34f36fa.js.map": "/perritos-adoption/static/js/main.a34f36fa.js.map"
   },
   "entrypoints": [
     "static/css/main.dff3cc6c.css",
-    "static/js/main.ed64804f.js"
+    "static/js/main.a34f36fa.js"
   ]
 }
