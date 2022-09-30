@@ -26,39 +26,43 @@ const Register = () => {
 
   const handleSubmit = async (e) => {
     setErrors(Validation(data));
-
     const validate = Validation(data);
+    console.log(Object.entries(validate).length)
     if (Object.entries(validate).length !== 0) {
       e.preventDefault();
-    }
-
-    try {
-      const result = await createUserWithEmailAndPassword(
-        auth,
-        email,
-        password
-      );
-
-      await setDoc(doc(db, "users", result.user.uid), {
-        uid: result.user.uid,
-        name,
-        email,
-        createdAt: Timestamp.fromDate(new Date()),
-      });
-      setData({
-        name: "",
-        email: "",
-        password: "",
-        loading: false,
-      });
-      navigate("/");
-    } catch (err) {
-      setData({ ...data, loading: false });
+    } else {
+      e.preventDefault()
+      try {
+        
+        const result = await createUserWithEmailAndPassword(
+          auth,
+          email,
+          password
+        );
+        
+        await setDoc(doc(db, "users", result.user.uid), {
+          uid: result.user.uid,
+          name,
+          email,
+          createdAt: Timestamp.fromDate(new Date()),
+        });
+      
+        setData({
+          name: "",
+          email: "",
+          password: "",
+          loading: false,
+        });
+        navigate("/");
+      
+      } catch (err) {
+        setData({ ...data, loading: false });
+      }
     }
   };
 
   return (
-    <div style={{ height: "76vh" }} className=" bg-stone-100 h-76">
+    <div style={{ minHeight: "76vh" }} className=" bg-stone-100 h-76">
       <div className="">
         <form className="form-user" onSubmit={handleSubmit}>
           <h3>Crea tu cuenta</h3>
