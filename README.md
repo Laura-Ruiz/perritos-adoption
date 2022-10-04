@@ -43,7 +43,7 @@ You will be able to:
 
 ## How to install
 1. Clone this repository 
-    > `git clone https://github.com/BoccoSantiago/Perritos.git`
+    > `git clone https://github.com/Laura-Ruiz/perritos-adoption.git`
 2. Access the app directory
     > `cd <repository folder>`
 3. Installation 
